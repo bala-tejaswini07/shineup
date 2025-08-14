@@ -5,12 +5,14 @@ import { LeaderboardPreview } from "@/components/leaderboard-preview"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-muted/30 to-background">
+    <div className="min-h-screen bg-gradient-to-br from-cyan-50 via-white to-cyan-50">
       <Navbar />
-      <main>
+      <main className="space-y-32">
         <HeroCarousel />
-        <FeatureCards />
-        <LeaderboardPreview />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32">
+          <FeatureCards />
+          <LeaderboardPreview />
+        </div>
       </main>
     </div>
   )

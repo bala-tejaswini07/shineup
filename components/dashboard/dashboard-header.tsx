@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Bell, Settings, LogOut, Users, Trophy } from "lucide-react"
+import { Bell, Settings, LogOut, Users, Trophy, Dumbbell } from "lucide-react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
 
@@ -37,6 +37,12 @@ export function DashboardHeader({ user }: DashboardHeaderProps) {
             <Link href="/dashboard">
               <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
                 Dashboard
+              </Button>
+            </Link>
+            <Link href="/workouts">
+              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
+                <Dumbbell className="h-4 w-4 mr-2" />
+                Workouts
               </Button>
             </Link>
             <Link href="/leaderboard">
